@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "outDir": "./dist", // LESSON - This config tells the transpile task (aka 'tsc') where to write the transpiled js files to
+    "strictNullChecks": true,
+    "strictPropertyInitialization": false // LESSON - if this is true, you have to set a default value, or constructor setting for all class properties.  Defaults to false
+  },
+  "include": ["src/**/*.ts", "env.ts"],
+  "exclude": ["node_modules"]
+}

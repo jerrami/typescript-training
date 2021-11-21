@@ -1,0 +1,32 @@
+{
+  "name": "typescript-training",
+  "version": "1.0.0",
+  "description": "Sample repo for some typescript training provided to and for coworkers.",
+  "main": "index.ts",
+  "scripts": {
+    "build-and-serve": "tsc && node dist/index.js",
+    "start": "ts-node-dev --respawn src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jerrami/typescript-training.git"
+  },
+  "author": "JDP",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/jerrami/typescript-training/issues"
+  },
+  "homepage": "https://github.com/jerrami/typescript-training#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/faker": "^5.5.9",
+    "faker": "^5.5.3",
+    "ts-node": "^10.4.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
