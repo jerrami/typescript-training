@@ -25,11 +25,10 @@ const localFishOrDog: FishOrDog = {
     type: 'fish',
     swim: () => console.log('just keep swimming')
   },
-  tailWag: () => console.log('I just made a localFishOrDog swim')
+  tailWag: () => true
 };
 localFishOrDog.tailWag();
 
-// LESSON - Would NOT do this, but shows how you can have generic functions that overwrite and/or let you specify return type
 const localFish: Fish = {
   name: 'Guppy',
   type: 'fish',
@@ -38,6 +37,7 @@ const localFish: Fish = {
   }
 };
 
+// LESSON - Would NOT do this, but shows how you can have generic functions that overwrite and/or let you specify return type
 export const typeStomping = <T>(input: unknown): T => {
   return input as T;
 };

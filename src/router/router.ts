@@ -2,6 +2,7 @@ import { Request, Response } from 'express';
 import { getSampleAnimals } from '../controllers/get_animals';
 import { createPerson } from '../controllers/get_decorators';
 import { GetEndpoints } from './get_endpoints';
+import { getJavascriptContent} from '../controllers/javascript'
 
 /**
  * Shows the values of an enum
@@ -36,6 +37,9 @@ export const get = (req: Request, res: Response) => {
       break;
     case GetEndpoints.decorators:
       res.send([createPerson(), createPerson()]);
+      break;
+    case GetEndpoints.javascript:
+      res.send(getJavascriptContent());
       break;
     default:
       res

@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "allowJs": true, // LESSON - This allows the /javascript URL to work with a plain javascript file
     "esModuleInterop": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
